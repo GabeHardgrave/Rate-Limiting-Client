@@ -1,5 +1,3 @@
-# GoRLimit
-
 A self rate limiting and automatic-retry HTTP Client, written in Go.
 
 ## Purpose
