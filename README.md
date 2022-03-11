@@ -6,7 +6,7 @@ Modern HTTP based APIs typically rate limit clients through some mechanism. This
 
 Even if an API does not explicitly rate limit, robust HTTP clients should still be able to handle transient server errors and service unavailability, while still being "good citizens" (so to speak) and not overwhelm the API servers.
 
-GoRlimit makes honoring rate limits and gracefully retrying requests painless, via `ratelimit.Client` and `ratelimit.MultiHostClient`. Both HTTP clients provide an identical interface to the standard library's `http.Client`. Simply swap an instance of `http.Client` with `ratelimit.Client`, and voilà, your application is now a respectful API client that honors rate limits, and gracefully retries when feasible.
+This library makes honoring rate limits and gracefully retrying requests painless, via `ratelimit.Client` and `ratelimit.MultiHostClient`. Both HTTP clients provide an identical interface to the standard library's `http.Client`. Simply swap an instance of `http.Client` with `ratelimit.Client`, and voilà, your application is now a respectful API client that honors rate limits, and gracefully retries when feasible.
 
 ## Examples
 
